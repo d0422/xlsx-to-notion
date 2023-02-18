@@ -1,6 +1,6 @@
 import openpyxl
 import json
-wb=openpyxl.load_workbook('./python/resume.xlsx')
+wb=openpyxl.load_workbook('./resume.xlsx')
 print(wb.get_sheet_names())
 응답시트=wb['설문지 응답 시트1']
 print("현재 지원자 수를 입력해주세요")
