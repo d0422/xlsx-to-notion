@@ -1,6 +1,5 @@
 require('dotenv').config();
 const axios = require('axios');
-const 지원자 = require('./지원자.json');
 module.exports = function apiCall(name, track, answerArray) {
   axios.post(
     'https://api.notion.com/v1/pages',

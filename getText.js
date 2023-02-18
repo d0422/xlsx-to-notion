@@ -29,7 +29,7 @@ module.exports = function getText(question, answer) {
           {
             type: 'text',
             text: {
-              content: String(answer),
+              content: String(answer) + '\n',
             },
           },
         ],

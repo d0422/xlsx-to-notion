@@ -1,4 +1,4 @@
-const 지원자들 = require('./지원자.json');
+const 지원자들 = require('./python/지원자.json');
 const 프론트질문 = require('./질문/프론트질문.json');
 const 기획질문 = require('./질문/기획질문.json');
 const 백엔드질문 = require('./질문/백엔드질문.json');
