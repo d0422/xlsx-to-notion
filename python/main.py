@@ -3,7 +3,7 @@ import json
 wb=openpyxl.load_workbook('./resume.xlsx')
 print(wb.get_sheet_names())
 응답시트=wb['설문지 응답 시트1']
-print("현재 지원자 수를 입력해주세요")
+print("몇번부터 끝까지 등록할지 입력해주세요.")
 전체세로=응답시트.max_column
 
 #입력받아야함
