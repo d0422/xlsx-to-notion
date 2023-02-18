@@ -1,6 +1,7 @@
 require('dotenv').config();
 const axios = require('axios');
-module.exports = function apiCall(name, track, commonQuestion, partQuestion) {
+const 지원자 = require('./지원자.json');
+module.exports = function apiCall(name, track, answerArray) {
   axios.post(
     'https://api.notion.com/v1/pages',
     {
@@ -23,35 +24,7 @@ module.exports = function apiCall(name, track, commonQuestion, partQuestion) {
           },
         },
       },
-      children: [
-        {
-          object: 'block',
-          type: 'paragraph',
-          paragraph: {
-            text: [
-              {
-                type: 'text',
-                text: {
-                  content: '내용테스트입니다\n',
-                },
-                annotations: {
-                  bold: true,
-                  italic: false,
-                  strikethrough: false,
-                  underline: false,
-                  code: false,
-                },
-              },
-              {
-                type: 'text',
-                text: {
-                  content: '내용테스트입니다',
-                },
-              },
-            ],
-          },
-        },
-      ],
+      children: answerArray,
     },
     {
       headers: {
