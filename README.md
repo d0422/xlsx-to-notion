@@ -19,5 +19,4 @@
 5. 터미널에서 main.py를 실행시킵니다.
    1. cd python
    2. python main.py
-   3.
 6. node app.js를 입력합니다.
